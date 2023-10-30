@@ -35,3 +35,4 @@ def Select_By_Name(name):
     conn = sqlite3.connect('Employees.db')
     cursor = conn.cursor()
     cursor.execute('SELECT * FROM Empoloyees WHERE name=?',(name))
+
